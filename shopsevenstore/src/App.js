@@ -34,12 +34,12 @@ function App() {
           </nav>
           <div className="navs-icon-container">
             <div className="search-input-container">
-              <input type="search" />
+              <input type="search" placeholder="Procurar" />
               <FontAwesomeIcon icon={faSearch} />
             </div>
             <button className="shopping-cart">
               <FontAwesomeIcon icon={faShoppingCart} />
-              <div className="products-count">0</div>
+              <div className="products-count">15</div>
             </button>
             <button className="menu-button">
               <FontAwesomeIcon icon={faBars}/>
