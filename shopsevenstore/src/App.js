@@ -10,6 +10,10 @@ function App() {
         <Navbar />
         <main>
           <Header />
+          <div className="page-inner-content">
+            <div className="section-title">
+            </div>            
+          </div>
         </main>
       </div>
     </Router>

@@ -12,12 +12,14 @@ export default function Header() {
                 Produtos eletrônicos selecionados para seu bem estar e 
                 da sua família. Desfrute de comprar on-line conosco.
             </p>
-            <Link to="/products">
+            <Link to="/products" className="see-more-btn">
                 <span>Ver Agora</span>
                 <FontAwesomeIcon icon={faChevronRight}/>
             </Link>
         </div>
-        <div className="left-side"></div>
+        <div className="right-side">
+            <img src="/images/header-image.png" alt="imagem do banner principal" />
+        </div>
     </div>    
   </header>;
   
