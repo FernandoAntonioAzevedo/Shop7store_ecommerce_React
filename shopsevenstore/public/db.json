@@ -5,14 +5,14 @@
       "name": "Combo Gamer Meetion",
       "image": "/images/products/product-4.png",
       "rating": 4,
-      "price": 4000
+      "price": 174.92
     },
     {
       "id": 2,
       "name": "Msi GeFore Gtx 1650",
       "image": "/images/products/product-5.png",
       "rating": 5,
-      "price": 20000
+      "price": 1149.74
     },
     {
       "id": 3,
@@ -75,14 +75,14 @@
       "name": "PlayStation 5",
       "image": "/images/products/product-14.png",
       "rating": 5,
-      "price": 54000
+      "price": 4774.88
     },
     {
       "id": 12,
       "name": "Gaming Desktop RTX 3090Ti",
       "image": "/images/products/product-15.png",
       "rating": 5,
-      "price": 450000
+      "price": 5849.49
     }
   ]
 }

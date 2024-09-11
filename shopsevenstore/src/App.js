@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import ProductsList from "./components/ProductsList";
 import { useEffect, useState } from "react";
+import ExclusiveSection from "./components/ExclusiveSection";
+import TestimonialsList from "./components/TestimonialsList";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -27,10 +29,12 @@ function App() {
             </div> 
 
             <div className="main-content">
-              <ProductsList products={products} />
-            </div>           
+              <ProductsList products={products} />              
+            </div>                       
           </div>
         </main>
+        <ExclusiveSection />
+        <TestimonialsList />
       </div>
     </Router>
   );

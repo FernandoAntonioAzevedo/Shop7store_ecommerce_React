@@ -330,3 +330,55 @@ header .right-side img {
 }
 
 /* Fim do Conteúdo do Main */
+
+/* Início da Exclusive Section */
+
+.exclusive-section {
+  background-color: var(--primary-color);
+}
+
+.exclusive-section .content {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 5rem 1rem;
+}
+
+.exclusive-section .content .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.exclusive-section .content .right-side img {
+  max-width: 500px;
+}
+
+/* Fim da Exclusive Section */
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .section-title h3 {
+    font-size: 1.2rem;    
+  }
+
+  .product .name, 
+  .product .price, 
+  .product .rate {
+    max-height: 1rem;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+
+  .exclusive-section .content {
+    flex-direction: column-reverse;
+  }
+
+  .exclusive-section .content .right-side img {
+    max-width: 250px;
+    margin-bottom: 3rem;
+  }
+}
+
