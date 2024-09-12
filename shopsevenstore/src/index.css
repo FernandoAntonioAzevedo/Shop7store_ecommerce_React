@@ -395,6 +395,74 @@ header .right-side img {
 
 /* Fim Testimonials */
 
+
+/* Início do rodapé */
+
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+footer .content {
+  display: flex;
+  padding: 4rem 1rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.download-options > * {
+  margin: 1rem 0;
+}
+
+.download-options > p:first-child {
+  font-weight: bold;
+}
+
+.download-options > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.download-options > div img {
+  max-width: 150px;
+}
+
+.logo-footer {
+  text-align: center;
+}
+
+.logo-footer span {
+  color: #fff;
+}
+
+.logo-footer p {
+  max-width: 480px;
+  margin-top: 1rem;
+  margin-inline: auto;
+}
+
+footer .links h3 {
+  margin: 0.8rem;
+}
+
+footer .links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copyright {
+  padding: 2rem;
+  text-align: center;
+}
+
+hr {
+  margin-inline: 4rem;
+}
+ 
+/* Fim do rodapé */
+
 /* Media Queries */
 
 @media (max-width: 800px) {
@@ -426,4 +494,27 @@ header .right-side img {
     max-width: 400px;
     margin-inline: auto;
   }
+
+  footer .content {
+    display: inline;    
+  }
+
+  footer .content > div {
+    padding: 1rem;
+  }
+
+  .download-options > div img {
+    width: 125px;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  footer .links ul,
+  footer .links h3 {
+    text-align: center;
+    
+  }
+
 }
