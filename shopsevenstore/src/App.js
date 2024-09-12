@@ -6,6 +6,7 @@ import ProductsList from "./components/ProductsList";
 import { useEffect, useState } from "react";
 import ExclusiveSection from "./components/ExclusiveSection";
 import TestimonialsList from "./components/TestimonialsList";
+import Footer from "./components/Footer";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -35,6 +36,7 @@ function App() {
         </main>
         <ExclusiveSection />
         <TestimonialsList />
+        <Footer />
       </div>
     </Router>
   );

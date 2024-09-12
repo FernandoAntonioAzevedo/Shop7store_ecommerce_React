@@ -19,56 +19,56 @@
       "name": "Dualsense PS5",
       "image": "/images/products/product-6.png",
       "rating": 5,
-      "price": 4000
+      "price": 389.89
     },
     {
       "id": 4,
       "name": "Cadeira Gamer Frizzi",
       "image": "/images/products/product-7.png",
       "rating": 3,
-      "price": 17500
+      "price": 977.69
     },
     {
       "id": 5,
       "name": "iPhone 14 Pro Max 512GB",
       "image": "/images/products/product-8.png",
       "rating": 5,
-      "price": 115000
+      "price": 4779.52
     },
     {
       "id": 6,
       "name": "Samsung Galaxy S23 Ultra 1TB",
       "image": "/images/products/product-9.png",
       "rating": 5,
-      "price": 110000
+      "price": 2749.29
     },
     {
       "id": 7,
       "name": "Asus Rog Phone 3 Gamer",
       "image": "/images/products/product-10.png",
       "rating": 4,
-      "price": 65000
+      "price": 2458.33
     },
     {
       "id": 8,
       "name": "Xiaomi 13 Ultra",
       "image": "/images/products/product-11.png",
       "rating": 4,
-      "price": 80500
+      "price": 1992.33
     },
     {
       "id": 9,
       "name": "Xbox Series X",
       "image": "/images/products/product-12.png",
       "rating": 5,
-      "price": 45000
+      "price": 3778.44
     },
     {
       "id": 10,
       "name": "Racingwheel GT480 Ferrari",
       "image": "/images/products/product-13.png",
       "rating": 5,
-      "price": 14000
+      "price": 1233.22
     },
     {
       "id": 11,
