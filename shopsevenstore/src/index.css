@@ -518,3 +518,19 @@ hr {
   }
 
 }
+
+/* Início Sidebar Cart */
+
+.sidebar-cart {
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  box-shadow: 5px 5px 50px var(--dark-color);
+}
+
+/* Fim Sidebar Cart */

@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import ExclusiveSection from "./components/ExclusiveSection";
 import TestimonialsList from "./components/TestimonialsList";
 import Footer from "./components/Footer";
+import SidebarCart from "./components/SidebarCart";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -23,6 +24,7 @@ function App() {
         <Navbar />
         <main>
           <Header />
+          <SidebarCart />
           <div className="page-inner-content">
             <div className="section-title">
               <h3>Produtos Selecionados</h3>
