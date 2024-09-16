@@ -1,13 +1,10 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import ProductsList from "./components/ProductsList";
 import { useEffect, useState } from "react";
-import ExclusiveSection from "./components/ExclusiveSection";
-import TestimonialsList from "./components/TestimonialsList";
 import Footer from "./components/Footer";
-import SidebarCart from "./components/SidebarCart";
+import HomePage from "./components/pages/HomePage";
+import ProductsPage from "./components/pages/ProductsPage";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -23,21 +20,15 @@ function App() {
       <div className="App">
         <Navbar />
         <main>
-          <Header />
-          <SidebarCart />
-          <div className="page-inner-content">
-            <div className="section-title">
-              <h3>Produtos Selecionados</h3>
-              <div className="underline"></div>
-            </div> 
-
-            <div className="main-content">
-              <ProductsList products={products} />              
-            </div>                       
-          </div>
-        </main>
-        <ExclusiveSection />
-        <TestimonialsList />
+          <Routes>
+           <Route path="/" element={<HomePage products={products}/>} />
+           <Route 
+            path="/products" 
+            element={<ProductsPage products={products}/>} 
+           />
+          </Routes>
+        
+        </main>        
         <Footer />
       </div>
     </Router>

@@ -20,7 +20,7 @@ export default function SidebarCart() {
         </div>
 
         <div className="total-container">
-           <b>Total:</b> R$ 1200 
+           <b>Total:</b> R$ 000.00 
         </div>
 
         <Link to="/cart/checkout" className="btn-icon">
