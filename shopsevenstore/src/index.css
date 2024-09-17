@@ -599,8 +599,8 @@ hr {
   padding: 0.2rem;
 }
 
-.sidebar-cart .show {
-  display: ;
+.sidebar-cart.show {
+  display: block;
 }
 
 

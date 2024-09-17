@@ -5,11 +5,28 @@ import ProductsList from "../ProductsList";
 import ExclusiveSection from "../ExclusiveSection";
 import TestimonialsList from "../TestimonialsList";
 
-export default function HomePage({ products }) {
+export default function HomePage({ 
+  products,
+  showSidebarCart,
+  setShowSidebarCart,
+  addProductToCart,
+  selectedProducts,
+  cartTotal,
+  removeProductFromCart,
+  addToCartTotal,
+
+}) {
   return (
      <>      
-       <Header />
-        <SidebarCart />
+        <Header />
+        <SidebarCart
+          addToCartTotal={addToCartTotal}
+          removeProductFromCart={removeProductFromCart}
+          cartTotal={cartTotal}
+          selectedProducts={selectedProducts} 
+          setShowSidebarCart={setShowSidebarCart}
+          showSidebarCart={showSidebarCart}
+        />
         <div className="page-inner-content">
           <div className="section-title">
             <h3>Produtos Selecionados</h3>
@@ -17,7 +34,9 @@ export default function HomePage({ products }) {
           </div> 
 
           <div className="main-content">
-            <ProductsList products={products} />              
+            <ProductsList 
+            addProductToCart={addProductToCart} 
+            products={products} />              
           </div>                       
         </div>    
       <ExclusiveSection />
