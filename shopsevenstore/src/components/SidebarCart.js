@@ -32,16 +32,23 @@ export default function SidebarCart({
         ))}
         </div>
 
-        <div className="total-container">
-           <b>Total:</b> R$ {cartTotal} 
-        </div>
+      {cartTotal === 0 ? (
+        <i>Seu carrinho está vazio</i>
+      ) : (
+        <>
+          <div className="total-container">
+             <b>Total: </b> R$ {cartTotal} 
+          </div>
 
-        <Link to="/cart/checkout" className="btn-icon">
+          <Link to="/cart/checkout" className="btn-icon">
                 <span>Pagar Agora</span>
                 <FontAwesomeIcon icon={faMoneyBill}/>
-        </Link>
+          </Link>        
+        </>
+      )}
 
-        <i>Seu carrinho está vazio</i>
+     
+        
     </aside>
   );  
 }

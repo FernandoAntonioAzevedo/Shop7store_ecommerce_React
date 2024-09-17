@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import HomePage from "./components/pages/HomePage";
 import ProductsPage from "./components/pages/ProductsPage";
+import SidebarCart from "./components/SidebarCart";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -41,9 +42,17 @@ function App() {
           selectedProducts={selectedProducts} 
           setShowSidebarCart={setShowSidebarCart} 
         />
+        <SidebarCart
+          addToCartTotal={addToCartTotal}
+          removeProductFromCart={removeProductFromCart}
+          cartTotal={cartTotal}
+          selectedProducts={selectedProducts} 
+          setShowSidebarCart={setShowSidebarCart}
+          showSidebarCart={showSidebarCart}
+        />
         <main>
-          <Routes>
-           <Route 
+         <Routes>
+          <Route 
              path="/" 
              element={
               <HomePage
@@ -58,16 +67,24 @@ function App() {
               /> 
              } 
            />
-           <Route 
-            path="/products" 
-            element={<ProductsPage products={products} /> } 
-            />
-          </Routes>
-        
-        </main>        
-        <Footer />
-      </div>
-    </Router>
+            <Route 
+              path="/products" 
+              element={
+            <ProductsPage 
+              products={products}
+              addProductToCart={addProductToCart}  
+            /> 
+          } 
+          />
+          <Route 
+            path="/cart/checkout" 
+            element={<div>Página de Checkout {cartTotal}</div>}
+          />
+        </Routes>        
+      </main>        
+      <Footer />
+    </div>
+   </Router>
   );
 }
 

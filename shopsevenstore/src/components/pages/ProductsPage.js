@@ -1,7 +1,7 @@
 import React from "react";
 import ProductsList from "../ProductsList";
 
-export default function ProductsPage({products} ) {
+export default function ProductsPage({ products, addProductToCart,}) {
   return (
     <div className="page-inner-content">
           <div className="section-title">
@@ -10,7 +10,8 @@ export default function ProductsPage({products} ) {
           </div> 
 
           <div className="main-content">
-            <ProductsList products={products} />              
+            <ProductsList products={products} 
+            addProductToCart={addProductToCart}/>              
           </div>                       
         </div>   
   );
